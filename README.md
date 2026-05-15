@@ -64,13 +64,13 @@ Three experiments were conducted by varying the **activation function**, **numbe
 
 ## Results
 
-| Experiment                    | Test Loss | Test Accuracy | Test MSE |
-|-------------------------------|-----------|---------------|----------|
-| Exp 1: ReLU \| 32 \| lr=0.0005 | ~0.15     | ~0.95         | ~0.07    |
-| Exp 2: Tanh \| 32 \| lr=0.0005 | ~0.17     | ~0.94         | ~0.08    |
-| Exp 3: ReLU \| 64 \| lr=0.001  | ~0.14     | ~0.96         | ~0.06    |
+| Experiment                      | Test Accuracy | Best Val Accuracy | Notes                        |
+|---------------------------------|---------------|-------------------|------------------------------|
+| Exp 1: ReLU \| 32 \| lr=0.0005 | 0.7388        | ~0.73             | Steady learning, stable      |
+| Exp 2: Tanh \| 32 \| lr=0.0005 | 0.7185        | ~0.71             | Slower convergence than ReLU |
+| Exp 3: ReLU \| 64 \| lr=0.001  | **0.8564**    | ~0.85             | Best performance ✅           |
 
-> **Note:** Results may vary slightly due to randomness. Run the code to get exact values.
+> **Best model:** Experiment 3 — ReLU activation, 64 neurons, lr=0.001 achieved the highest test accuracy of **85.64%**
 
 ---
 
@@ -155,4 +155,4 @@ heart-mlp-classification/
 
 - **Course:** Neural Networks  
 - **University:** Badr University in Assiut (BUA)  
-- **Faculty:** Faculty of Artificial Intelligence  
+- **Faculty:** Faculty of Artificial Intelligence
